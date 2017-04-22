@@ -1,15 +1,17 @@
 {
   "name": "logs",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/server.js",
   "scripts": {
+    "start": "node lib/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "fluent-amqp": "^0.1.1"
+    "elasticsearch": "^13.0.0-rc2",
+    "fluent-amqp": "^0.2.0"
   }
 }
