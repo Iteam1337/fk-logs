@@ -8,10 +8,10 @@ services:
   schedule:
     image: iteam1337/fk-schedule:1.0.0
     ports:
-      - 8000:8000
+      - 5000:5000
     environment:
       - RABBITMQ__HOST=amqp://rabbitmq
-      - POSTGRES__HOST=postgres://postgres:5432
+      - POSTGRES__HOST=postgresql://pguser:pgpass@postgres:5432/pgdb
   postgres:
     image: postgres:9.6
     environment:
