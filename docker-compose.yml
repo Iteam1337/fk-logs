@@ -6,7 +6,7 @@ services:
       - 5672:5672
       - 15672:15672
   schedule:
-    image: iteam1337/fk-schedule:1.0.0
+    image: iteam1337/fk-schedule:1.0.2
     ports:
       - 5000:5000
     environment:
